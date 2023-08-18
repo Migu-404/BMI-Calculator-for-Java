@@ -1,0 +1,58 @@
+//    ******* !!! CREATED BY @MIGU-404! ON GITHUB !!! *******
+// @                                                            @
+// @    /\    /\    |  |----   |    |   |   |  |----|  |   |  | @
+// @   /  \  /  \   |  |  --|  |    |___|___|  |    |  |___|  | @
+// @  /    \/    \  |  |____|  |____|       |  |____|      |  . @
+// @                                                            @
+// @    /\    /\  \    /\    /  |    |    |----|  |---          @
+// @   /  \  /  \  \  /  \  /   |    |    |    |  |---          @
+// @  /    \/    \  \/    \/    |__  |__  |____|  |___          @
+//
+//    ******* !!! CREATED BY @MIGU-404! ON GITHUB !!! *******
+
+//(3) Body Mass Index Calculator - Miguel R.
+import java.util.Scanner;
+
+public class BodyMassIndex
+{
+	public static void main(String[] args)
+	{
+		// Creating Scanner object
+		Scanner keyboard = new Scanner(System.in);
+
+		double weight;		//Weight
+		double height;		//height
+		double bmi;			//Calculation
+		double heightSquared; // Height^2
+
+		// User input: Weight
+		System.out.print("Please type in your Weight (lbs): ");
+		weight = keyboard.nextDouble();
+
+		// User input: Height
+		System.out.print("\nPlease type in your Height (in): ");
+		height = keyboard.nextDouble();
+
+		// Squaring weight by creating a new variable
+		heightSquared = height * height;
+
+		// Creating the calculation reference
+		bmi = weight * 703 / heightSquared;
+
+		if (bmi < 18.5)
+		{
+			System.out.printf("\nYour BMI is %.2f & shows that you are underweight.\n", bmi);
+		}
+		else
+		{
+			if (bmi > 25)
+			{
+				System.out.printf("\nYour BMI is %.2f & shows that you are overweight.\n", bmi);
+			}
+			else
+			{
+				System.out.printf("Your BMI is %.2f & shows that you are in optimal physique.\n", bmi);
+			}
+		}
+	}
+}
