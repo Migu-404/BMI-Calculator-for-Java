@@ -10,7 +10,7 @@
 //
 //    ******* !!! CREATED BY @MIGU-404! ON GITHUB !!! *******
 
-//(3) Body Mass Index Calculator - Miguel R.
+//(3) Body Mass Index Calculator - Miguel
 import java.util.Scanner;
 
 public class BodyMassIndex
